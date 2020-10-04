@@ -1,0 +1,11 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropBall.Windows", "DropBall.Windows\DropBall.Windows.csproj", "{01851C8E-5364-485C-B25B-37D7A909F2E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropBall", "DropBall\DropBall.csproj", "{49EDFCA4-B0BF-43DE-9859-1EA14F92BD49}"
+EndProject
+Global
+EndGlobal
