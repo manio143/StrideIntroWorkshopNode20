@@ -1,0 +1,48 @@
+!PrefabAsset
+Id: 7029a4b1-24b3-4b06-9778-d913f2896438
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 76211cd1-90e5-4999-8e4c-f45e0b0dc883
+    Parts:
+        -   Entity:
+                Id: 76211cd1-90e5-4999-8e4c-f45e0b0dc883
+                Name: Platform
+                Components:
+                    4fab68c6830942fb1d0367c3aa8b63c6: !TransformComponent
+                        Id: 0ffc0373-602a-4d37-a795-3299e8f0a385
+                        Position: {X: 0.0, Y: 0.23290998, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.3, Z: 2.0}
+                        Children: {}
+                    c3c400506acb9aa5e9e8eecb461bbb47: !ModelComponent
+                        Id: 91f444b2-6d86-4b6e-8594-3304316b1924
+                        Model: ae2376af-637a-40b4-af37-6fb6200a4317:Cube
+                        Materials:
+                            13d6610bfb51ffd610f33be54b3752e3~0: 3a348724-a85d-4f89-8618-726755990329:Platform Material
+                    7b18c173b514a68c341923831b522661: !RigidbodyComponent
+                        Id: 85794121-268c-4932-adc5-30ec04efecd3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 100.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8d211c63069835f25a415fcf1de20587: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    21e7c47f40b6eed3c51a079ce8aadd37: !DropBall.ConstantVelocity,DropBall
+                        Id: 15e27979-934c-4c0f-b81c-4e35b77c6658
+                        Velocity: 1.0
