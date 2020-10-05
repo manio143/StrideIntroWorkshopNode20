@@ -93,8 +93,8 @@ Hierarchy:
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
-                        IsKinematic: false
-                        Mass: 1.0
+                        IsKinematic: true
+                        Mass: 100.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
                         OverrideGravity: false
@@ -117,7 +117,7 @@ Hierarchy:
                         Id: 5162b022-40bc-495a-a13a-c6eff4dd00a4
                         Position: {X: 0.0, Y: 1.0086778, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 0.6, Y: 0.6, Z: 0.6}
                         Children: {}
                     7dcc986baf0cf93ba229dd4972f4d68d: !ModelComponent
                         Id: 164c1ff9-fb23-45d2-9ad9-9f62d78872ce
@@ -136,21 +136,24 @@ Hierarchy:
                         Mass: 1.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        OverrideGravity: true
+                        Gravity: {X: 0.0, Y: -150.0, Z: 0.0}
                         NodeName: null
                         ColliderShapes:
                             90fd441845c178d5dbc7a1351fd7e1e7: !SphereColliderShapeDesc
                                 Is2D: false
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    4f28215932d18c0db4c2954c490f4bfe: !DropBall.SphereMovement,DropBall
+                        Id: eb2aa82f-ef9f-4ff2-a37d-fa203c9653f0
+                        Velocity: 5.0
         -   Entity:
                 Id: ee32f496-035f-41bf-9644-5ec8859c8f64
                 Name: Camera
                 Components:
                     00cce9413bdd5ee54063889714faf97f: !TransformComponent
                         Id: bb9e8773-dab0-464c-9de6-198f517fbdb2
-                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
-                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Position: {X: 8.0, Y: 4.0, Z: 0.0}
+                        Rotation: {X: -0.061628412, Y: 0.70441604, Z: 0.061628412, W: 0.70441604}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     3410114ee4a634306c3e651da144d0db: !CameraComponent
@@ -158,12 +161,3 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         Slot: c04ae525-b92b-470b-a1fc-c87328530a0b
-                    2ddb9795a50d35b03211dc8f5f76c8a7: !DropBall.BasicCameraController,DropBall
-                        Id: 33784b08-cc3d-4414-9ce1-a53b23d4fbff
-                        Gamepad: false
-                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
-                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
-                        SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
-                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
-                        TouchRotationSpeed: {X: 1.0, Y: 0.7}

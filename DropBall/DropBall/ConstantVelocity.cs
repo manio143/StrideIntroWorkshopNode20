@@ -10,7 +10,9 @@ namespace DropBall
 
         public override void Update()
         {
-            Entity.Get<RigidbodyComponent>().LinearVelocity = new Vector3(0, Velocity, 0);
+            var currentY = Entity.Transform.Position.Y;
+            var newY = currentY + Velocity * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+            Entity.Transform.Position.Y = newY;
         }
     }
 }
