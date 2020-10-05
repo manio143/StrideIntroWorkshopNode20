@@ -11,6 +11,7 @@ Hierarchy:
         - ref!! af243e23-06a3-42b3-b2c3-ec689eb28ae9
         - ref!! 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
         - ref!! ba400796-9af5-4731-8158-b87b21f125c9
+        - ref!! b405cd5d-65cc-49d8-a550-02a9527210f1
     Parts:
         -   Entity:
                 Id: 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
@@ -69,12 +70,27 @@ Hierarchy:
                         Type: !LightSkybox
                             Skybox: ffa724a8-005d-4da7-8406-7d0b7c50e4f3:Skybox
         -   Entity:
+                Id: b405cd5d-65cc-49d8-a550-02a9527210f1
+                Name: Platform
+                Components:
+                    4fab68c6830942fb1d0367c3aa8b63c6: !TransformComponent
+                        Id: 353757de-ce40-474c-b3fd-8c00a72e7762
+                        Position: {X: 0.0, Y: 0.23290998, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.3, Z: 2.0}
+                        Children: {}
+                    c3c400506acb9aa5e9e8eecb461bbb47: !ModelComponent
+                        Id: 84818cb3-537c-4673-bfc2-18bfe5195176
+                        Model: ae2376af-637a-40b4-af37-6fb6200a4317:Cube
+                        Materials:
+                            13d6610bfb51ffd610f33be54b3752e3~0: 3a348724-a85d-4f89-8618-726755990329:Platform Material
+        -   Entity:
                 Id: ba400796-9af5-4731-8158-b87b21f125c9
                 Name: Sphere
                 Components:
                     9ee619d2eb3c74b63c0eea7e55d74e9b: !TransformComponent
                         Id: 5162b022-40bc-495a-a13a-c6eff4dd00a4
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Position: {X: 0.0, Y: 1.0086778, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
