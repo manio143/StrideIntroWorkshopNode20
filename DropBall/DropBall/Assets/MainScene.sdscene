@@ -13,6 +13,7 @@ Hierarchy:
         - ref!! ba400796-9af5-4731-8158-b87b21f125c9
         - ref!! b405cd5d-65cc-49d8-a550-02a9527210f1
         - ref!! 9c494ff7-d519-4022-90d2-1cce06cb2865
+        - ref!! 635d2748-f355-4ec1-86e2-46bcd4a4a1ce
     Parts:
         -   Entity:
                 Id: 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
@@ -28,6 +29,43 @@ Hierarchy:
                         Id: bf5b1494-d971-4f70-bc75-63bfbc167207
                         Model: 9c282552-f2cd-4235-bcf8-4a69a2dc8886:Ground
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 635d2748-f355-4ec1-86e2-46bcd4a4a1ce
+                Name: Remover
+                Components:
+                    cde8451676fc4820970df90487cefbf6: !TransformComponent
+                        Id: 3baa0103-fc15-41f8-aa8f-0b9cdf0eaaaf
+                        Position: {X: 0.0, Y: 5.9, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.5, Z: 30.0}
+                        Children: {}
+                    6a7659cd9d16bf560a0c351e8c0b823f: !RigidbodyComponent
+                        Id: b43e4dd8-b3c8-4661-bd1e-9b18bd10636a
+                        CollisionGroup: SensorTrigger
+                        CanCollideWith: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            e2b44d001735332b4ad6c0a579e9024e: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ceca17c56612044d9ee5ace88b6e6340: !DropBall.PlatformRemover,DropBall
+                        Id: bd8d18b2-da4f-484e-a263-fc66070e19b0
         -   Entity:
                 Id: 844d1302-1a71-4578-b7e2-f65aeeb9a574
                 Name: Directional light
