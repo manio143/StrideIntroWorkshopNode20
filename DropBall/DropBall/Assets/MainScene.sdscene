@@ -12,6 +12,7 @@ Hierarchy:
         - ref!! 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
         - ref!! ba400796-9af5-4731-8158-b87b21f125c9
         - ref!! b405cd5d-65cc-49d8-a550-02a9527210f1
+        - ref!! 9c494ff7-d519-4022-90d2-1cce06cb2865
     Parts:
         -   Entity:
                 Id: 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
@@ -53,6 +54,44 @@ Hierarchy:
                                 BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
+                Id: 9c494ff7-d519-4022-90d2-1cce06cb2865
+                Name: Spawner
+                Components:
+                    cde8451676fc4820970df90487cefbf6: !TransformComponent
+                        Id: 99a0c435-979a-4585-a105-ddadb75f94ee
+                        Position: {X: 0.0, Y: -0.25, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.5, Z: 30.0}
+                        Children: {}
+                    6a7659cd9d16bf560a0c351e8c0b823f: !RigidbodyComponent
+                        Id: 0a18ac7e-4d15-4abc-96b8-213cf8be6666
+                        CollisionGroup: SensorTrigger
+                        CanCollideWith: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            e2b44d001735332b4ad6c0a579e9024e: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    68fcecf1261691a62a6aa47973c48758: !DropBall.PlatformSpawner,DropBall
+                        Id: b4941a87-7a87-4a24-a027-996c77890096
+                        PlatformPrefab: 7029a4b1-24b3-4b06-9778-d913f2896438:Platform
+                        PlatformDistance: 2.0
+        -   Entity:
                 Id: af243e23-06a3-42b3-b2c3-ec689eb28ae9
                 Name: Skybox
                 Components:
@@ -75,7 +114,7 @@ Hierarchy:
                 Components:
                     4fab68c6830942fb1d0367c3aa8b63c6: !TransformComponent
                         Id: 353757de-ce40-474c-b3fd-8c00a72e7762
-                        Position: {X: 0.0, Y: 0.23290998, Z: 0.0}
+                        Position*: {X: 0.0, Y: -0.029303312, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 0.3, Z: 2.0}
                         Children: {}
@@ -86,6 +125,7 @@ Hierarchy:
                             13d6610bfb51ffd610f33be54b3752e3~0: 3a348724-a85d-4f89-8618-726755990329:Platform Material
                     7b18c173b514a68c341923831b522661: !RigidbodyComponent
                         Id: 98acb903-3b0d-455e-a077-3d618122219d
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -129,6 +169,7 @@ Hierarchy:
                         Materials: {}
                     0ca2a34a82f06dcbbf7afb779ba65534: !RigidbodyComponent
                         Id: fed72f90-0433-4a8d-b534-15a76d49a704
+                        CollisionGroup: KinematicFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5

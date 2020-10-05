@@ -23,6 +23,7 @@ Hierarchy:
                             13d6610bfb51ffd610f33be54b3752e3~0: 3a348724-a85d-4f89-8618-726755990329:Platform Material
                     7b18c173b514a68c341923831b522661: !RigidbodyComponent
                         Id: 85794121-268c-4932-adc5-30ec04efecd3
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
