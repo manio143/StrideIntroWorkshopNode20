@@ -1,0 +1,37 @@
+!UIPageAsset
+Id: ec7a8a73-973f-4315-a2db-d81ee942ffe8
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! d677f45a-0fcc-4eff-94ed-c50efb1cc796
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 3d205537-aa4f-408f-837a-215c30643cc2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Game Over!
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 100.0
+                TextColor: {R: 175, G: 0, B: 0, A: 255}
+        -   UIElement: !Grid
+                Id: d677f45a-0fcc-4eff-94ed-c50efb1cc796
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    5b2f4d3c3a0294aca3a63e607d01d1b9: !TextBlock ref!! 3d205537-aa4f-408f-837a-215c30643cc2
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}

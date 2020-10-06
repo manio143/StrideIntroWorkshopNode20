@@ -15,6 +15,7 @@ Hierarchy:
         - ref!! 9c494ff7-d519-4022-90d2-1cce06cb2865
         - ref!! 635d2748-f355-4ec1-86e2-46bcd4a4a1ce
         - ref!! 741cda1a-f539-49d6-9f3d-2b75286d4949
+        - ref!! c413f16a-6870-4237-a3fa-e822c45445f1
     Parts:
         -   Entity:
                 Id: 44fe24b4-b613-4438-8c8a-b3b72d1c7dd6
@@ -266,6 +267,19 @@ Hierarchy:
                     4f28215932d18c0db4c2954c490f4bfe: !DropBall.SphereMovement,DropBall
                         Id: eb2aa82f-ef9f-4ff2-a37d-fa203c9653f0
                         Velocity: 5.0
+        -   Entity:
+                Id: c413f16a-6870-4237-a3fa-e822c45445f1
+                Name: GameOverUI
+                Components:
+                    a2f119e73c4a5081874090c35e4288ba: !TransformComponent
+                        Id: a80deda9-a17d-4ed2-b92c-5091b4ba0f3f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    209424b88001b383bdd5da8eb69df13c: !DropBall.GameOverUI,DropBall
+                        Id: abfca1d2-317d-413c-9d6f-a4646dcf107a
+                        UIPage: ec7a8a73-973f-4315-a2db-d81ee942ffe8:GameOverPage
         -   Entity:
                 Id: ee32f496-035f-41bf-9644-5ec8859c8f64
                 Name: Camera
